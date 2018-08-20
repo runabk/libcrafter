@@ -64,6 +64,14 @@ libcrafter_la_SOURCES = crafter/Layer.cpp \
 						crafter/Protocols/IPOptionPointerCraft.cpp \
 						crafter/Protocols/UDPConstructor.cpp \
 						crafter/Protocols/UDPCraft.cpp \
+						crafter/Protocols/UDPLiteConstructor.cpp \
+                                                crafter/Protocols/UDPLiteCraft.cpp \
+						crafter/Protocols/SCTPConstructor.cpp \
+                                                crafter/Protocols/SCTPCraft.cpp \
+						crafter/Protocols/DCCPConstructor.cpp \
+						crafter/Protocols/DCCPCraft.cpp \
+						crafter/Protocols/IPSecConstructor.cpp \
+                                                crafter/Protocols/IPSecCraft.cpp \
 						crafter/Protocols/TCPConstructor.cpp \
 						crafter/Protocols/TCPCraft.cpp \
 						crafter/Protocols/TCPOptionLayer.cpp \
