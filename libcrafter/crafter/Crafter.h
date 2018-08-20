@@ -49,6 +49,18 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /* UDP Protocol Implementation */
 #include "Protocols/UDP.h"
 
+/* UDPLite Protocol Implementation */
+#include "Protocols/UDPLite.h"
+
+/* IPSec Protocol Implementation */
+#include "Protocols/IPSec.h"
+
+/* SCTP Protocol Implementation */
+#include "Protocols/SCTP.h"
+
+/* DCCP Protocol Implementation */
+#include "Protocols/DCCP.h"
+
 /* TCP Protocol Implementation */
 #include "Protocols/TCP.h"
 /* TCP Options Implementation */
