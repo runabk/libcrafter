@@ -89,6 +89,22 @@ void Crafter::InitCrafter() {
 	UDP udp_dummy;
 	/* Register the protocol, this is executed only once */
 	Protocol::AccessFactory()->Register(&udp_dummy);
+	
+	UDPLite udplite_dummy;
+        /* Register the protocol, this is executed only once */
+        Protocol::AccessFactory()->Register(&udplite_dummy);
+
+        IPSec ipsec_dummy;
+        /* Register the protocol, this is executed only once */
+        Protocol::AccessFactory()->Register(&ipsec_dummy);
+
+        SCTP sctp_dummy;
+        /* Register the protocol, this is executed only once */
+        Protocol::AccessFactory()->Register(&sctp_dummy);
+
+        DCCP dccp_dummy;
+        /* Register the protocol, this is executed only once */
+        Protocol::AccessFactory()->Register(&dccp_dummy);
 
 	TCP tcp_dummy;
 	/* Register the protocol, this is executed only once */
