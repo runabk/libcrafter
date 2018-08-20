@@ -86,7 +86,10 @@ namespace Crafter {
 	IPv6* GetIPv6(const Packet& packet);
 	TCP* GetTCP(const Packet& packet);
 	UDP* GetUDP(const Packet& packet);
-
+	DCCP* GetDCCP(const Packet& packet);
+	UDPLite* GetUDPLite(const Packet& packet);
+	SCTP* GetSCTP(const Packet& packet);
+	IPSec* GetIPSec(const Packet& packet);
 	RawLayer* GetRawLayer(const Packet& packet);
 
 	/* Craft the layer */
