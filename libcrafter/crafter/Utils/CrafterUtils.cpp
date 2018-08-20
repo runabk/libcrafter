@@ -489,6 +489,22 @@ UDP* Crafter::GetUDP(const Packet& packet){
 	return packet.GetLayer<UDP>();
 }
 
+UDPLite* Crafter::GetUDPLite(const Packet& packet){
+        return packet.GetLayer<UDPLite>();
+}
+
+IPSec* Crafter::GetIPSec(const Packet& packet){
+        return packet.GetLayer<IPSec>();
+}
+
+SCTP* Crafter::GetSCTP(const Packet& packet){
+        return packet.GetLayer<SCTP>();
+}
+
+DCCP* Crafter::GetDCCP(const Packet& packet){
+        return packet.GetLayer<DCCP>();
+}
+
 RawLayer* Crafter::GetRawLayer(const Packet& packet){
 	return packet.GetLayer<RawLayer>();
 }
