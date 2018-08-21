@@ -51,7 +51,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 namespace Crafter {
 
 	short_word CheckSum(const short_word *buf, int nwords);
-
+	word CRC(const unsigned char *buf, int nwords);
 	/* RNGs */
 	byte RNG8();
 	short_word RNG16();
