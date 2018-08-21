@@ -173,7 +173,11 @@ nobase_crafter_include_HEADERS =crafter.h \
 								crafter/Protocols/IPOptionPad.h \
 								crafter/Protocols/IPOptionTraceroute.h \
 								crafter/Protocols/IPOptionPointer.h \
+								crafter/Protocols/DCCP.h \
+								crafter/Protocols/IPsec.h \
+								crafter/Protocols/SCTP.h \
 								crafter/Protocols/UDP.h \
+								crafter/Protocols/UDPLite.h \
 								crafter/Protocols/TCP.h \
 								crafter/Protocols/TCPOption.h \
 								crafter/Protocols/TCPOptionLayer.h \
