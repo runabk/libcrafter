@@ -694,7 +694,7 @@ void Packet::GetFilter(ostream& filter) const {
 						"(icmp[icmptype] == icmp-sourcequench) or " /* payload */
 						"(icmp[icmptype] == icmp-redirect) "
 						") and ( " /* Match the uuid */
-							MATCH(4, 2, ipv4_layer->GetIdentification()) " or " /* Same IP ID */
+							MATCH(4, 2, ipv4_layer->GetIdentification()) " and " /* Same IP ID */
 							" ( " /* Or same addresses */
 								MATCH(12, 4, ntohl(*(uint32_t*)ipv4_layer->GetRawSourceIP()))
 								" and "
