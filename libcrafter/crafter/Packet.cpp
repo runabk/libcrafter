@@ -696,7 +696,7 @@ void Packet::GetFilter(ostream& filter) const {
 						") and ( (" /* Match the uuid */
 							MATCH(4, 2, ipv4_layer->GetIdentification()) 
 							" or "
-							MATCH(9, 1, ipv4_layer->GetProtocol())
+							MATCH(9, 1, (int)ipv4_layer->GetProtocol())
 							") and " /* Same IP ID and Same Protocol number */
 							" ( " /* Or same addresses */
 								MATCH(12, 4, ntohl(*(uint32_t*)ipv4_layer->GetRawSourceIP()))
