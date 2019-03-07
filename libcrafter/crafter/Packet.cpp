@@ -717,9 +717,11 @@ void Packet::GetFilter(ostream& filter) const {
 						"(ip6[40] == 2) or"
 						"(ip6[40] == 3) or"
 						"(ip6[40] == 4) "
-						") and ( " /* Match the uuid  - 20 bits */
+						") and ( (" /* Match the uuid  - 20 bits */
 							" ip6[48:4] & 0x000fffff == " << ipv6_layer->GetFlowLabel()
-							<< " or ( " /* Same addresses */
+							<< " or " 
+							<< MATCH(6, 1, (int)ipv6_layer->GetNextHeader())
+							<< ") and ( " /* Same addresses */
 								MATCH(8, 4, ntohl(sourceip[0])) " and "
 								MATCH(12, 4, ntohl(sourceip[1])) " and "
 								MATCH(16, 4, ntohl(sourceip[2])) " and "
