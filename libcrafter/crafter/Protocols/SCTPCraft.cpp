@@ -83,7 +83,7 @@ void SCTP::Craft() {
 
 
 			/* Setup the rest of the SCTP datagram */
-			GetData(&raw_buffer[40]);
+			GetData(&raw_buffer[0]);
 
 			checksum = CRC((unsigned char *)&raw_buffer[0],raw_buffer.size());
 		}
